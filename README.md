@@ -1,6 +1,8 @@
 # Titanic Survival Prediction Model
 This project is a data science analysis and predictive model for the famous Titanic dataset, aimed at determining the likelihood of survival for passengers based on various features. The model was built using Python, and core libraries like Pandas, NumPy, Seaborn, and Scikit-Learn.
 
+https://services.meteored.com/img/article/titanic-10-curiosidades-sobre-el-naufragio-mas-famoso-de-la-historia-1681429632845_1280.jpg
+
 # Project Overview
 The Titanic tragedy is one of the most infamous shipwrecks in history, and this dataset provides insights into passenger details, including age, gender, passenger class, and more. The aim of this analysis is to predict whether a passenger survived or not based on these features.
 
