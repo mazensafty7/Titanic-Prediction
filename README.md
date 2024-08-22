@@ -26,16 +26,17 @@ Here are some key insights derived from the data:
 
 1. Male Survivors: The percentage of males who died is higher than those who survived.
 2. Female Survivors: The percentage of females who survived is higher than those who died. This aligns with the priority to save women first.
-3. Child Survivors: All male children aged 0-10 survived, highlighting the priority given to saving children.
-4. First-Class Males: Males in Pclass 1 had a higher survival rate, especially those aged between 30-40.
-5. Large Families: Females with more than 4 children all died due to a lack of enough lifeboats.
-6. Siblings and Spouses: Females with more than 6 siblings/spouses also did not survive.
+3. Child Survivors: Most male children aged 0-4 , 12-14 survived, highlighting the priority given to saving children.
+4. Old Men Survivors: Most old Male aged 48-50 survived, highlighting the priority given to saving old men.
+5. First-Class Males: Males in Pclass 1 had a higher survival rate, especially those aged between 0-18 , 24-28 , 34-36 , 42-44 , 48-50.
+6. Large Families: Females with 4 and 6 children all died due to a lack of enough lifeboats.
+7. Large Families: Females with 5 children aged 39-42 all died due to a lack of enough lifeboats.
 
 # Storytelling
 The survival rates of different groups tell a story of priority during the disaster:
 
 1. Females First: Women were given priority, reflecting the common practice of "women and children first" in evacuations.
-2. Children: The data reveals a strong emphasis on saving young boys, with all male children under 10 surviving.
+2. Childrenand Old Men: The data reveals a strong emphasis on saving young boys and old men.
 3. Social Class Matters: Wealthier males in first-class had better chances, indicating that social class played a significant role in survival.
 4. Family Size and Survival: Larger families struggled as lifeboats couldn’t accommodate them all, leading to higher mortality rates among those with many dependents.
 
