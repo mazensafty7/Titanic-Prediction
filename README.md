@@ -41,7 +41,8 @@ The survival rates of different groups tell a story of priority during the disas
 4. Family Size and Survival: Larger families struggled as lifeboats couldn’t accommodate them all, leading to higher mortality rates among those with many dependents.
 
 # Model Building
-The logistic regression model was chosen for this classification task. After training, the model achieved a good accuracy on the training data.
+The Random Forest Classifier model was chosen for this classification task. After training, the model achieved a good accuracy on the training data.
+**Training Accuracy: 0.9814814814814815**
 
 # How to Run the Project
 1. Clone this repository.
