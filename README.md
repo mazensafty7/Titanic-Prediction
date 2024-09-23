@@ -1,54 +1,52 @@
 # Titanic Survival Prediction Model
-This project is a data science analysis and predictive model for the famous Titanic dataset, aimed at determining the likelihood of survival for passengers based on various features. The model was built using Python, and core libraries like Pandas, NumPy, Seaborn, and Scikit-Learn.
+
+This project is a data science analysis and predictive model for the famous Titanic dataset, aimed at determining the likelihood of survival for passengers based on various features. The model was built using Python and core libraries like Pandas, NumPy, Seaborn, and Scikit-Learn.
 
 ![236793-1600x1200-titanic](https://github.com/user-attachments/assets/04456b29-c9a2-469e-9727-30ef17401262)
 
-# Project Overview
+## Project Overview
 The Titanic tragedy is one of the most infamous shipwrecks in history, and this dataset provides insights into passenger details, including age, gender, passenger class, and more. The aim of this analysis is to predict whether a passenger survived or not based on these features.
 
-# Dataset Description
+## Dataset Description
 The dataset used for training the model is the Titanic dataset from Kaggle, which consists of two files:
+- `train.csv`: Contains the data for training, including the target column ("Survived").
+- `test.csv`: Used for generating predictions.
 
-1. train.csv: Contains the data for training, including the target column ("Survived").
-2. test.csv: Contains the data for testing, without the target column.
-
-# Data Processing and Cleaning
+## Data Processing and Cleaning
 The steps involved in data cleaning and preprocessing include:
-
 1. Handling missing data by filling or dropping columns with excessive null values.
 2. Handling outliers using statistical techniques.
 3. Encoding categorical variables.
 4. Scaling numerical features for better model performance.
 5. Feature selection by dropping irrelevant columns.
 
-# Insights
+## Insights
 Here are some key insights derived from the data:
+1. **Male Survivors**: The percentage of males who died is higher than those who survived.
+2. **Female Survivors**: A higher percentage of females survived compared to those who died, reflecting the "women first" rescue priority.
+3. **Child Survivors**: Most male children aged 0-4 and 12-14 survived, indicating that young children were prioritized.
+4. **Older Men Survivors**: Males aged 48-50 had a higher survival rate.
+5. **First-Class Males**: Males in Pclass 1 had a higher survival rate, especially those aged between 0-18, 24-28, 34-36, 42-44, and 48-50.
+6. **Large Families**: Females with 4-6 children all perished due to insufficient lifeboats.
 
-1. Male Survivors: The percentage of males who died is higher than those who survived.
-2. Female Survivors: The percentage of females who survived is higher than those who died. This aligns with the priority to save women first.
-3. Child Survivors: Most male children aged 0-4 , 12-14 survived, highlighting the priority given to saving children.
-4. Old Men Survivors: Most old Male aged 48-50 survived, highlighting the priority given to saving old men.
-5. First-Class Males: Males in Pclass 1 had a higher survival rate, especially those aged between 0-18 , 24-28 , 34-36 , 42-44 , 48-50.
-6. Large Families: Females with 4 and 6 children all died due to a lack of enough lifeboats.
-7. Large Families: Females with 5 children aged 39-42 all died due to a lack of enough lifeboats.
+## Storytelling
+The survival rates tell a compelling story of how priorities during the evacuation were determined by gender, age, and social class:
+1. **Females First**: Women were prioritized in rescue efforts.
+2. **Children and Old Men**: Young children and older men were given preference for survival.
+3. **Social Class Matters**: Wealthier males in first-class had a better chance of survival.
+4. **Family Size and Survival**: Larger families struggled, as lifeboats couldn’t accommodate them all.
 
-# Storytelling
-The survival rates of different groups tell a story of priority during the disaster:
+## Final Predictions
+The model was used to make predictions on new test data without the "Survived" column, and the predictions were saved in a Kaggle submission file.
 
-1. Females First: Women were given priority, reflecting the common practice of "women and children first" in evacuations.
-2. Childrenand Old Men: The data reveals a strong emphasis on saving young boys and old men.
-3. Social Class Matters: Wealthier males in first-class had better chances, indicating that social class played a significant role in survival.
-4. Family Size and Survival: Larger families struggled as lifeboats couldn’t accommodate them all, leading to higher mortality rates among those with many dependents.
+## Model Building
+The dataset was split into training and test sets to evaluate model performance. A Decision Tree model was built, and hyperparameters were tuned using `GridSearchCV` with 5-fold cross-validation. The best hyperparameters found were:
+- `max_depth`: 10
+- `min_samples_leaf`: 2
+- `min_samples_split`: 8
 
-# Model Building
-The Random Forest Classifier model was chosen for this classification task. After training, the model achieved a good accuracy on the training data.
-**Training Accuracy: 0.9814814814814815**
+After tuning, the model's performance was as follows:
+- **Training Score**: 0.8842
+- **Test Score**: 0.8208
 
-# How to Run the Project
-1. Clone this repository.
-2. Open the notebook in Jupyter or any compatible environment.
-3. Ensure the required libraries are installed.
-4. Run the notebook step by step to see the analysis and results.
-
-# Prediction Submission
-The model generates predictions on the test set and saves the results in submission.csv for submission on Kaggle.
+Learning curves and complexity curves were also plotted to understand the model's behavior and prevent overfitting.
