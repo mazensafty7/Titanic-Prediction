@@ -46,7 +46,7 @@ The dataset was split into training and test sets to evaluate model performance.
 - `min_samples_split`: 8
 
 After tuning, the model's performance was as follows:
-- **Training Score**: 0.8842
-- **Test Score**: 0.8208
+- **Training Score**: 0.8639
+- **Test Score**: 0.8323
 
 Learning curves and complexity curves were also plotted to understand the model's behavior and prevent overfitting.
