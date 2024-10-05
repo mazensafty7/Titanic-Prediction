@@ -17,10 +17,10 @@ The dataset used for training the model is the Titanic dataset from Kaggle, whic
 ### 3. Data Processing and Cleaning
 The steps involved in data cleaning and preprocessing include:
 1. Handling missing data by filling or dropping columns with excessive null values.
-3. Encoding categorical variables using one-hot encoding and label encoding for the 'Sex' column.
-4. Scaling numerical features for better model performance.
-5. Feature selection by dropping irrelevant columns.
-6. **Processing the Test Data**: The test data was processed in the same way as the training data to ensure that the model's predictions are accurate. This included handling missing values, encoding categorical variables, and scaling numerical features.
+2. Encoding categorical variables using one-hot encoding and label encoding for the 'Sex' column.
+3. Scaling numerical features for better model performance.
+4. Feature selection by dropping irrelevant columns.
+5. **Processing the Test Data**: The test data was processed in the same way as the training data to ensure that the model's predictions are accurate. This included handling missing values, encoding categorical variables, and scaling numerical features.
 
 ### 4. Insights
 Here are some key insights derived from the data:
@@ -45,16 +45,19 @@ The dataset was split into training and test sets to evaluate model performance.
 - **Parameter 'min_samples_split'**: 2
 
 After tuning, the model's performance was as follows:
-- **Training Score**: 0.8596
-- **Test Score**: 0.8492
+- **Training Score**: 0.8933
+- **Test Score**: 0.8883
 
 Learning curves and complexity curves were also plotted to understand the model's behavior and prevent overfitting.
 
-### 7. Final Predictions
+### 7. KMeans Clustering
+To further enhance model accuracy, KMeans clustering was applied. Clustering helped group the data based on similar characteristics, which aided in better model training. The **Elbow Method** was used to determine the optimal number of clusters, with **5 clusters** selected as the best option. The inclusion of cluster labels improved both the training and test accuracy.
+
+### 8. Final Predictions
 The model was used to make predictions on new test data without the "Survived" column, and the predictions were saved in a Kaggle submission file. The test data was processed in the same way as the training data to ensure accurate predictions.
 
 ## Technologies Used
 - **Data Analysis and Visualization**: Pandas, Numpy, Matplotlib, Seaborn
 - **Data Preprocessing**: Handling missing data, One-hot Encoding, Label Encoding, Scaling
-- **Machine Learning**: Decision Tree, GridSearchCV
+- **Machine Learning**: Decision Tree, GridSearchCV, KMeans
 - **Model Evaluation**: Cross-validation, Model tuning
